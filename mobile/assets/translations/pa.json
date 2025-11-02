@@ -1,0 +1,143 @@
+{
+  "app_name": "ਕਿਸਾਨ ਸਾਥੀ",
+  "welcome": "ਕਿਸਾਨ ਸਾਥੀ ਵਿੱਚ ਤੁਹਾਡਾ ਸਵਾਗਤ ਹੈ",
+  "welcome_subtitle": "ਤੁਹਾਡਾ ਨਿੱਜੀ ਫਸਲ ਸਹਾਇਕ",
+  
+  "auth": {
+    "phone_number": "ਫੋਨ ਨੰਬਰ",
+    "enter_phone": "ਆਪਣਾ ਫੋਨ ਨੰਬਰ ਦਾਖਲ ਕਰੋ",
+    "send_otp": "OTP ਭੇਜੋ",
+    "verify_otp": "OTP ਪ੍ਰਮਾਣਿਤ ਕਰੋ",
+    "enter_otp": "OTP ਦਾਖਲ ਕਰੋ",
+    "resend_otp": "OTP ਮੁੜ ਭੇਜੋ",
+    "continue_as_guest": "ਮਹਿਮਾਨ ਵਜੋਂ ਜਾਰੀ ਰੱਖੋ",
+    "login": "ਲੌਗਇਨ",
+    "logout": "ਲੌਗਆਊਟ"
+  },
+  
+  "onboarding": {
+    "select_language": "ਭਾਸ਼ਾ ਚੁਣੋ",
+    "select_region": "ਆਪਣਾ ਖੇਤਰ ਚੁਣੋ",
+    "use_current_location": "ਮੌਜੂਦਾ ਸਥਾਨ ਵਰਤੋ",
+    "typical_crops": "ਤੁਸੀਂ ਆਮ ਤੌਰ 'ਤੇ ਕਿਹੜੀਆਂ ਫਸਲਾਂ ਉਗਾਉਂਦੇ ਹੋ?",
+    "get_started": "ਸ਼ੁਰੂ ਕਰੋ",
+    "skip": "ਛੱਡੋ"
+  },
+  
+  "home": {
+    "dashboard": "ਡੈਸ਼ਬੋਰਡ",
+    "my_fields": "ਮੇਰੇ ਖੇਤ",
+    "alerts": "ਚੇਤਾਵਨੀਆਂ",
+    "journal": "ਜਰਨਲ",
+    "knowledge": "ਗਿਆਨ ਭੰਡਾਰ",
+    "settings": "ਸੈਟਿੰਗਾਂ",
+    "no_crops_yet": "ਅਜੇ ਤੱਕ ਕੋਈ ਫਸਲ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤੀ ਗਈ",
+    "add_first_crop": "ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਆਪਣੀ ਪਹਿਲੀ ਫਸਲ ਸ਼ਾਮਲ ਕਰੋ",
+    "next_alert": "ਅਗਲੀ ਚੇਤਾਵਨੀ",
+    "active_crops": "ਸਰਗਰਮ ਫਸਲਾਂ",
+    "upcoming_alerts": "ਆਉਣ ਵਾਲੀਆਂ ਚੇਤਾਵਨੀਆਂ"
+  },
+  
+  "field": {
+    "add_field": "ਖੇਤ ਸ਼ਾਮਲ ਕਰੋ",
+    "edit_field": "ਖੇਤ ਸੰਪਾਦਿਤ ਕਰੋ",
+    "field_name": "ਖੇਤ ਦਾ ਨਾਮ",
+    "field_area": "ਖੇਤ ਦਾ ਖੇਤਰਫਲ",
+    "soil_type": "ਮਿੱਟੀ ਦੀ ਕਿਸਮ",
+    "hectare": "ਹੈਕਟੇਅਰ",
+    "acre": "ਏਕੜ",
+    "delete_field": "ਖੇਤ ਮਿਟਾਓ",
+    "delete_confirmation": "ਕੀ ਤੁਸੀਂ ਸੱਚਮੁੱਚ ਇਸ ਖੇਤ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+  },
+  
+  "crop": {
+    "add_crop": "ਫਸਲ ਸ਼ਾਮਲ ਕਰੋ",
+    "edit_crop": "ਫਸਲ ਸੰਪਾਦਿਤ ਕਰੋ",
+    "crop_type": "ਫਸਲ ਦੀ ਕਿਸਮ",
+    "seed_variety": "ਬੀਜ ਦੀ ਕਿਸਮ",
+    "sowing_date": "ਬੀਜਾਈ ਦੀ ਤਾਰੀਖ",
+    "irrigation_type": "ਸਿੰਚਾਈ ਦੀ ਕਿਸਮ",
+    "current_stage": "ਮੌਜੂਦਾ ਪੜਾਅ",
+    "days_to_next_stage": "ਅਗਲੇ ਪੜਾਅ ਤੱਕ ਦਿਨ",
+    "view_timeline": "ਸਮਾਂਰੇਖਾ ਵੇਖੋ",
+    "delete_crop": "ਫਸਲ ਮਿਟਾਓ"
+  },
+  
+  "timeline": {
+    "crop_timeline": "ਫਸਲ ਸਮਾਂਰੇਖਾ",
+    "stages": "ਪੜਾਅ",
+    "calendar_view": "ਕੈਲੰਡਰ ਦ੍ਰਿਸ਼",
+    "stage_details": "ਪੜਾਅ ਵੇਰਵੇ"
+  },
+  
+  "alerts": {
+    "all_alerts": "ਸਾਰੀਆਂ ਚੇਤਾਵਨੀਆਂ",
+    "upcoming": "ਆਉਣ ਵਾਲੀਆਂ",
+    "past": "ਪਿਛਲੀਆਂ",
+    "mark_done": "ਪੂਰਾ ਹੋਇਆ ਮੰਨੋ",
+    "snooze": "ਸਨੂਜ਼",
+    "add_note": "ਨੋਟ ਸ਼ਾਮਲ ਕਰੋ",
+    "irrigation_alert": "ਸਿੰਚਾਈ ਚੇਤਾਵਨੀ",
+    "fertilizer_alert": "ਖਾਦ ਚੇਤਾਵਨੀ",
+    "pest_alert": "ਕੀਟ ਚੇਤਾਵਨੀ",
+    "disease_alert": "ਰੋਗ ਚੇਤਾਵਨੀ",
+    "weed_alert": "ਬੂਟੀ ਚੇਤਾਵਨੀ"
+  },
+  
+  "journal": {
+    "crop_journal": "ਫਸਲ ਜਰਨਲ",
+    "add_entry": "ਇੰਦਰਾਜ ਸ਼ਾਮਲ ਕਰੋ",
+    "notes": "ਨੋਟਸ",
+    "photos": "ਫੋਟੋਆਂ",
+    "yield": "ਉਪਜ",
+    "add_photo": "ਫੋਟੋ ਸ਼ਾਮਲ ਕਰੋ",
+    "record_yield": "ਉਪਜ ਰਿਕਾਰਡ ਕਰੋ"
+  },
+  
+  "knowledge": {
+    "knowledge_base": "ਗਿਆਨ ਭੰਡਾਰ",
+    "pests": "ਕੀਟ ਅਤੇ ਰੋਗ",
+    "fertilizers": "ਖਾਦ",
+    "best_practices": "ਸਰਵੋਤਮ ਅਭਿਆਸ",
+    "search": "ਖੋਜ"
+  },
+  
+  "settings": {
+    "settings": "ਸੈਟਿੰਗਾਂ",
+    "language": "ਭਾਸ਼ਾ",
+    "notifications": "ਸੂਚਨਾਵਾਂ",
+    "account": "ਖਾਤਾ",
+    "help": "ਸਹਾਇਤਾ ਅਤੇ ਸਮਰਥਨ",
+    "about": "ਬਾਰੇ",
+    "sync": "ਡੇਟਾ ਸਿੰਕ ਕਰੋ",
+    "offline_mode": "ਔਫਲਾਈਨ ਮੋਡ"
+  },
+  
+  "common": {
+    "save": "ਸੁਰੱਖਿਅਤ ਕਰੋ",
+    "cancel": "ਰੱਦ ਕਰੋ",
+    "delete": "ਮਿਟਾਓ",
+    "edit": "ਸੰਪਾਦਿਤ ਕਰੋ",
+    "add": "ਸ਼ਾਮਲ ਕਰੋ",
+    "ok": "ਠੀਕ ਹੈ",
+    "yes": "ਹਾਂ",
+    "no": "ਨਹੀਂ",
+    "back": "ਵਾਪਸ",
+    "next": "ਅਗਲਾ",
+    "done": "ਪੂਰਾ ਹੋਇਆ",
+    "loading": "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ...",
+    "error": "ਗਲਤੀ",
+    "success": "ਸਫਲਤਾ",
+    "retry": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+    "search": "ਖੋਜ",
+    "filter": "ਫਿਲਟਰ",
+    "sort": "ਕ੍ਰਮਬੱਧ ਕਰੋ"
+  },
+  
+  "errors": {
+    "network_error": "ਨੈੱਟਵਰਕ ਗਲਤੀ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਕਨੈਕਸ਼ਨ ਜਾਂਚੋ।",
+    "server_error": "ਸਰਵਰ ਗਲਤੀ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+    "invalid_input": "ਅਵੈਧ ਇਨਪੁੱਟ। ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਡੇਟਾ ਜਾਂਚੋ।",
+    "something_went_wrong": "ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+  }
+}

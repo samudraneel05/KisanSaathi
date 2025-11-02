@@ -1,0 +1,143 @@
+{
+  "app_name": "KisanSaathi",
+  "welcome": "Welcome to KisanSaathi",
+  "welcome_subtitle": "Your personalized crop assistant",
+  
+  "auth": {
+    "phone_number": "Phone Number",
+    "enter_phone": "Enter your phone number",
+    "send_otp": "Send OTP",
+    "verify_otp": "Verify OTP",
+    "enter_otp": "Enter OTP",
+    "resend_otp": "Resend OTP",
+    "continue_as_guest": "Continue as Guest",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  
+  "onboarding": {
+    "select_language": "Select Language",
+    "select_region": "Select Your Region",
+    "use_current_location": "Use Current Location",
+    "typical_crops": "What crops do you typically grow?",
+    "get_started": "Get Started",
+    "skip": "Skip"
+  },
+  
+  "home": {
+    "dashboard": "Dashboard",
+    "my_fields": "My Fields",
+    "alerts": "Alerts",
+    "journal": "Journal",
+    "knowledge": "Knowledge Base",
+    "settings": "Settings",
+    "no_crops_yet": "No crops added yet",
+    "add_first_crop": "Add your first crop to get started",
+    "next_alert": "Next Alert",
+    "active_crops": "Active Crops",
+    "upcoming_alerts": "Upcoming Alerts"
+  },
+  
+  "field": {
+    "add_field": "Add Field",
+    "edit_field": "Edit Field",
+    "field_name": "Field Name",
+    "field_area": "Field Area",
+    "soil_type": "Soil Type",
+    "hectare": "Hectare",
+    "acre": "Acre",
+    "delete_field": "Delete Field",
+    "delete_confirmation": "Are you sure you want to delete this field?"
+  },
+  
+  "crop": {
+    "add_crop": "Add Crop",
+    "edit_crop": "Edit Crop",
+    "crop_type": "Crop Type",
+    "seed_variety": "Seed Variety",
+    "sowing_date": "Sowing Date",
+    "irrigation_type": "Irrigation Type",
+    "current_stage": "Current Stage",
+    "days_to_next_stage": "Days to Next Stage",
+    "view_timeline": "View Timeline",
+    "delete_crop": "Delete Crop"
+  },
+  
+  "timeline": {
+    "crop_timeline": "Crop Timeline",
+    "stages": "Stages",
+    "calendar_view": "Calendar View",
+    "stage_details": "Stage Details"
+  },
+  
+  "alerts": {
+    "all_alerts": "All Alerts",
+    "upcoming": "Upcoming",
+    "past": "Past",
+    "mark_done": "Mark as Done",
+    "snooze": "Snooze",
+    "add_note": "Add Note",
+    "irrigation_alert": "Irrigation Alert",
+    "fertilizer_alert": "Fertilizer Alert",
+    "pest_alert": "Pest Alert",
+    "disease_alert": "Disease Alert",
+    "weed_alert": "Weed Alert"
+  },
+  
+  "journal": {
+    "crop_journal": "Crop Journal",
+    "add_entry": "Add Entry",
+    "notes": "Notes",
+    "photos": "Photos",
+    "yield": "Yield",
+    "add_photo": "Add Photo",
+    "record_yield": "Record Yield"
+  },
+  
+  "knowledge": {
+    "knowledge_base": "Knowledge Base",
+    "pests": "Pests & Diseases",
+    "fertilizers": "Fertilizers",
+    "best_practices": "Best Practices",
+    "search": "Search"
+  },
+  
+  "settings": {
+    "settings": "Settings",
+    "language": "Language",
+    "notifications": "Notifications",
+    "account": "Account",
+    "help": "Help & Support",
+    "about": "About",
+    "sync": "Sync Data",
+    "offline_mode": "Offline Mode"
+  },
+  
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "ok": "OK",
+    "yes": "Yes",
+    "no": "No",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "retry": "Retry",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort"
+  },
+  
+  "errors": {
+    "network_error": "Network error. Please check your connection.",
+    "server_error": "Server error. Please try again later.",
+    "invalid_input": "Invalid input. Please check your data.",
+    "something_went_wrong": "Something went wrong. Please try again."
+  }
+}

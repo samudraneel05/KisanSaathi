@@ -5,6 +5,8 @@ import 'package:kisan_saathi/features/home/presentation/screens/home_screen.dart
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:logger/logger.dart';
+import 'package:kisan_saathi/shared/services/firebase_service.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 final Logger _logger = Logger();
 
@@ -46,16 +48,27 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     setState(() => _isLoadingLocation = true);
 
     try {
-      // Check permission
+      // Check if service is enabled
+      bool serviceEnabled = await Geolocator.isLocationServiceEnabled();
+      if (!serviceEnabled) {
+        _logger.w('Location services are disabled');
+        return;
+      }
+
       LocationPermission permission = await Geolocator.checkPermission();
       if (permission == LocationPermission.denied) {
         permission = await Geolocator.requestPermission();
         if (permission == LocationPermission.denied) {
-          throw Exception('Location permission denied');
+          _logger.w('Location permission denied');
+          return;
         }
       }
 
-      // Get position
+      if (permission == LocationPermission.deniedForever) {
+        _logger.w('Location permission permanently denied');
+        return;
+      }
+
       _position = await Geolocator.getCurrentPosition();
       
       // Get address
@@ -74,9 +87,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       _logger.e('Location error: $e');
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Could not get location: $e'),
-            backgroundColor: AppColors.error,
+          const SnackBar(
+            content: Text('Location not available. You can enter your region manually below.'),
+            backgroundColor: AppColors.warning,
           ),
         );
       }
@@ -96,14 +109,37 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     }
   }
 
-  void _completeOnboarding() {
-    // TODO: Save onboarding data
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(
-        builder: (context) => const HomeScreen(),
-      ),
-    );
+  Future<void> _completeOnboarding() async {
+    try {
+      final user = FirebaseService.instance.auth.currentUser;
+      if (user != null) {
+        // Save onboarding data to Firestore
+        await FirebaseService.instance.firestore
+            .collection('users')
+            .doc(user.uid)
+            .set({
+          'onboardingCompleted': true,
+          'region': _region,
+          'latitude': _position?.latitude,
+          'longitude': _position?.longitude,
+          'preferredCrops': _selectedCrops,
+          'completedAt': FieldValue.serverTimestamp(),
+        }, SetOptions(merge: true));
+        
+        _logger.i('Onboarding completed and saved');
+      }
+    } catch (e) {
+      _logger.e('Error saving onboarding: $e');
+    }
+    
+    if (mounted) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const HomeScreen(),
+        ),
+      );
+    }
   }
 
   @override

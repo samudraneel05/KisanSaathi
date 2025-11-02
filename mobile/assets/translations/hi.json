@@ -1,0 +1,143 @@
+{
+  "app_name": "किसान साथी",
+  "welcome": "किसान साथी में आपका स्वागत है",
+  "welcome_subtitle": "आपका व्यक्तिगत फसल सहायक",
+  
+  "auth": {
+    "phone_number": "फोन नंबर",
+    "enter_phone": "अपना फोन नंबर दर्ज करें",
+    "send_otp": "OTP भेजें",
+    "verify_otp": "OTP सत्यापित करें",
+    "enter_otp": "OTP दर्ज करें",
+    "resend_otp": "OTP पुनः भेजें",
+    "continue_as_guest": "अतिथि के रूप में जारी रखें",
+    "login": "लॉगिन",
+    "logout": "लॉगआउट"
+  },
+  
+  "onboarding": {
+    "select_language": "भाषा चुनें",
+    "select_region": "अपना क्षेत्र चुनें",
+    "use_current_location": "वर्तमान स्थान का उपयोग करें",
+    "typical_crops": "आप आमतौर पर कौन सी फसलें उगाते हैं?",
+    "get_started": "शुरू करें",
+    "skip": "छोड़ें"
+  },
+  
+  "home": {
+    "dashboard": "डैशबोर्ड",
+    "my_fields": "मेरे खेत",
+    "alerts": "अलर्ट",
+    "journal": "जर्नल",
+    "knowledge": "ज्ञान भंडार",
+    "settings": "सेटिंग्स",
+    "no_crops_yet": "अभी तक कोई फसल नहीं जोड़ी गई",
+    "add_first_crop": "शुरू करने के लिए अपनी पहली फसल जोड़ें",
+    "next_alert": "अगला अलर्ट",
+    "active_crops": "सक्रिय फसलें",
+    "upcoming_alerts": "आगामी अलर्ट"
+  },
+  
+  "field": {
+    "add_field": "खेत जोड़ें",
+    "edit_field": "खेत संपादित करें",
+    "field_name": "खेत का नाम",
+    "field_area": "खेत का क्षेत्रफल",
+    "soil_type": "मिट्टी का प्रकार",
+    "hectare": "हेक्टेयर",
+    "acre": "एकड़",
+    "delete_field": "खेत हटाएं",
+    "delete_confirmation": "क्या आप वाकई इस खेत को हटाना चाहते हैं?"
+  },
+  
+  "crop": {
+    "add_crop": "फसल जोड़ें",
+    "edit_crop": "फसल संपादित करें",
+    "crop_type": "फसल का प्रकार",
+    "seed_variety": "बीज की किस्म",
+    "sowing_date": "बुवाई की तारीख",
+    "irrigation_type": "सिंचाई का प्रकार",
+    "current_stage": "वर्तमान चरण",
+    "days_to_next_stage": "अगले चरण तक दिन",
+    "view_timeline": "समयरेखा देखें",
+    "delete_crop": "फसल हटाएं"
+  },
+  
+  "timeline": {
+    "crop_timeline": "फसल समयरेखा",
+    "stages": "चरण",
+    "calendar_view": "कैलेंडर दृश्य",
+    "stage_details": "चरण विवरण"
+  },
+  
+  "alerts": {
+    "all_alerts": "सभी अलर्ट",
+    "upcoming": "आगामी",
+    "past": "पिछले",
+    "mark_done": "पूर्ण के रूप में चिह्नित करें",
+    "snooze": "स्नूज़",
+    "add_note": "नोट जोड़ें",
+    "irrigation_alert": "सिंचाई अलर्ट",
+    "fertilizer_alert": "उर्वरक अलर्ट",
+    "pest_alert": "कीट अलर्ट",
+    "disease_alert": "रोग अलर्ट",
+    "weed_alert": "खरपतवार अलर्ट"
+  },
+  
+  "journal": {
+    "crop_journal": "फसल जर्नल",
+    "add_entry": "प्रविष्टि जोड़ें",
+    "notes": "नोट्स",
+    "photos": "फ़ोटो",
+    "yield": "उपज",
+    "add_photo": "फ़ोटो जोड़ें",
+    "record_yield": "उपज रिकॉर्ड करें"
+  },
+  
+  "knowledge": {
+    "knowledge_base": "ज्ञान भंडार",
+    "pests": "कीट और रोग",
+    "fertilizers": "उर्वरक",
+    "best_practices": "सर्वोत्तम प्रथाएं",
+    "search": "खोजें"
+  },
+  
+  "settings": {
+    "settings": "सेटिंग्स",
+    "language": "भाषा",
+    "notifications": "सूचनाएं",
+    "account": "खाता",
+    "help": "सहायता और समर्थन",
+    "about": "के बारे में",
+    "sync": "डेटा सिंक करें",
+    "offline_mode": "ऑफ़लाइन मोड"
+  },
+  
+  "common": {
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "add": "जोड़ें",
+    "ok": "ठीक है",
+    "yes": "हां",
+    "no": "नहीं",
+    "back": "वापस",
+    "next": "अगला",
+    "done": "पूर्ण",
+    "loading": "लोड हो रहा है...",
+    "error": "त्रुटि",
+    "success": "सफलता",
+    "retry": "पुनः प्रयास करें",
+    "search": "खोजें",
+    "filter": "फ़िल्टर",
+    "sort": "क्रमबद्ध करें"
+  },
+  
+  "errors": {
+    "network_error": "नेटवर्क त्रुटि। कृपया अपना कनेक्शन जांचें।",
+    "server_error": "सर्वर त्रुटि। कृपया बाद में पुनः प्रयास करें।",
+    "invalid_input": "अमान्य इनपुट। कृपया अपना डेटा जांचें।",
+    "something_went_wrong": "कुछ गलत हो गया। कृपया पुनः प्रयास करें।"
+  }
+}
