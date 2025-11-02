@@ -9,6 +9,7 @@ import 'package:kisan_saathi/shared/services/storage_service.dart';
 import 'package:kisan_saathi/shared/services/firebase_service.dart';
 import 'package:kisan_saathi/shared/services/notification_service.dart';
 import 'package:kisan_saathi/features/onboarding/presentation/screens/language_selection_screen.dart';
+import 'package:kisan_saathi/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:kisan_saathi/features/auth/presentation/screens/phone_auth_screen.dart';
 import 'package:kisan_saathi/features/home/presentation/screens/home_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -128,13 +129,42 @@ class _SplashScreenState extends State<SplashScreen>
         // Check auth state
         final user = FirebaseService.instance.auth.currentUser;
         if (user != null) {
-          // User is logged in - go to home
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const HomeScreen(),
-            ),
-          );
+          // User is logged in - check if onboarding completed
+          try {
+            final userDoc = await FirebaseService.instance.firestore
+                .collection('users')
+                .doc(user.uid)
+                .get();
+            
+            final onboardingCompleted = userDoc.data()?['onboardingCompleted'] ?? false;
+            
+            if (onboardingCompleted) {
+              // Go to home
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const HomeScreen(),
+                ),
+              );
+            } else {
+              // Go to onboarding
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const OnboardingScreen(),
+                ),
+              );
+            }
+          } catch (e) {
+            _logger.e('Error checking onboarding status: $e');
+            // Default to onboarding on error
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const OnboardingScreen(),
+              ),
+            );
+          }
         } else {
           // User not logged in - go to auth
           Navigator.pushReplacement(

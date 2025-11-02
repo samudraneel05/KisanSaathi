@@ -5,6 +5,7 @@ import 'package:kisan_saathi/features/home/presentation/screens/dashboard_screen
 import 'package:kisan_saathi/features/alerts/presentation/screens/alerts_screen.dart';
 import 'package:kisan_saathi/features/journal/presentation/screens/journal_screen.dart';
 import 'package:kisan_saathi/features/settings/presentation/screens/settings_screen.dart';
+import 'package:kisan_saathi/features/fields/presentation/screens/fields_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -57,10 +58,13 @@ class _HomeScreenState extends State<HomeScreen> {
       floatingActionButton: _currentIndex == 0
           ? FloatingActionButton.extended(
               onPressed: () {
-                // TODO: Navigate to add crop screen
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const FieldsScreen()),
+                );
               },
               icon: const Icon(Icons.add),
-              label: Text(context.tr('crop.add_crop')),
+              label: Text(context.tr('field.add_field')),
             )
           : null,
     );
