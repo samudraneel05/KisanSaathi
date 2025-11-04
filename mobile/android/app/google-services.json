@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "241150626109",
+    "project_id": "kisansaathi-8dada",
+    "storage_bucket": "kisansaathi-8dada.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241150626109:android:1891cce4c2f4a67f6a9d54",
+        "android_client_info": {
+          "package_name": "com.kisansaathi.kisan_saathi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxceLRAya6q17cZDm4DAytdxqqoy2jZno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
